@@ -1,2 +1,33 @@
 
 /* Your CSS Code here. */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.holder {
+    display: flex;
+    flex-wrap: wrap-reverse; /* Reverse the wrap direction */
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    width: calc(14.28% - 5px); /* 100% / 7 items - 5px margin */
+    height: 150px;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+    margin: 2.5px; /* Half of the margin space */
+}
